@@ -1,0 +1,46 @@
+body {
+  background-color: #b1eaf1;
+  margin: 0;
+  padding: 0; }
+  body .header {
+    background-color: #4d0026;
+    color: #b1eaf1;
+    text-align: center; }
+    body .header h1 {
+      font-family: "Revalia", cursive;
+      font-size: 2.4em;
+      margin: 0;
+      padding: 0.4em;
+      text-transform: uppercase; }
+  body #app > div {
+    margin: 2em;
+    font-family: Roboto, serif;
+    color: #340019; }
+    body #app > div textarea, body #app > div .result {
+      width: 100%;
+      min-height: 20em;
+      word-break: break-all; }
+    body #app > div textarea {
+      background: inherit;
+      padding: 0.5em;
+      border-style: solid;
+      border-width: 1px;
+      border-top-left-radius: 2%;
+      border-bottom-left-radius: 2%;
+      resize: none;
+      outline: none;
+      overflow-y: scroll;
+      transition: border-color 0.5s; }
+      body #app > div textarea:focus {
+        border-color: #0099ff; }
+
+@media screen and (min-width: 740px) {
+  #app > div {
+    display: flex; }
+    #app > div textarea, #app > div .result {
+      width: 48%;
+      min-height: 30em; }
+    #app > div textarea {
+      margin-right: 1em; } }
+
+/*# sourceMappingURL=main.css.map */

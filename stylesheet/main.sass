@@ -1,0 +1,49 @@
+$lightgreen: #b1eaf1
+$purple: #4d0026
+
+body
+	background-color: $lightgreen
+	margin: 0
+	padding: 0
+	.header
+		background-color: $purple
+		color: $lightgreen
+		text-align: center
+		h1
+			font:
+				family: 'Revalia', cursive
+				size: 2.4em
+			margin: 0
+			padding: .4em
+			text-transform: uppercase
+	#app > div
+		margin: 2em
+		font-family: Roboto, serif
+		color: darken($purple, 5%)
+		textarea, .result
+			width: 100%
+			min-height: 20em
+			word-break: break-all
+		textarea
+			background: inherit
+			padding: .5em
+			border:
+				style: solid
+				width: 1px
+				top-left-radius: 2%
+				bottom-left-radius: 2%
+			resize: none
+			outline: none
+			overflow-y: scroll
+			transition: border-color .5s
+			&:focus
+				border-color: #0099ff
+
+@media screen and (min-width: 740px)
+	#app > div
+		display: flex
+		textarea, .result
+			width: 48%
+			min-height: 30em
+		textarea
+			margin-right: 1em
